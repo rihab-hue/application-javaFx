@@ -1,0 +1,30 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*interface main */
+.parent{
+	-fx-background-color: transparent ;
+}
+.pane{
+	-fx-background-color: #FFA500;
+}
+/*btn connecter et inscrit */
+.trans-btn-white-border{
+	-fx-background-color: transparent ;
+	-fx-background-radius: 5px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 5px;
+	-fx-border-width: 1px;
+	-fx-text-fill: whitesmoke ;
+}
+/*image interface main */
+.white-pane{
+	-fx-background-image: url("/images/bck.jpg");
+	-fx-background-size: 281 386;
+	-fx-background-position: center center;
+	-fx-background-color: #FFFFFF;
+}
+/*acceuil  */
+.backgrnd{
+	-fx-background-color: #F7F7F7;
+	-fx-background-radius: 0px;
+}

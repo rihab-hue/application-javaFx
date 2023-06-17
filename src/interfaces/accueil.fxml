@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane layoutX="1.0" prefHeight="415.0" prefWidth="684.0" styleClass="backgrnd" stylesheets="@../../bin/application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.AcceuilController">
+   <children>
+      <Pane layoutX="20.0" layoutY="22.0" prefHeight="41.0" prefWidth="644.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafx/images/acceuil.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="61.0" layoutY="12.0" text="Disponnibiltés" />
+            <Label fx:id="nbr" layoutX="161.0" layoutY="12.0" prefHeight="18.0" prefWidth="15.0" />
+            <Label layoutX="182.0" layoutY="12.0" text=")" />
+            <Label layoutX="156.0" layoutY="12.0" text="(" />
+         </children>
+      </Pane>
+      <Label layoutX="447.0" layoutY="145.0" text="Superficie" AnchorPane.rightAnchor="166.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="447.0" layoutY="229.0" text="Region">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="447.0" layoutY="306.0" text="Loyer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_loyer" layoutX="447.0" layoutY="323.0" prefHeight="25.0" prefWidth="176.0" AnchorPane.leftAnchor="447.0" AnchorPane.rightAnchor="61.0" />
+      <TextField fx:id="txt_region" layoutX="447.0" layoutY="253.0" prefHeight="25.0" prefWidth="176.0" AnchorPane.rightAnchor="61.0" />
+      <TextField fx:id="txt_superficie" layoutX="447.0" layoutY="175.0" prefHeight="25.0" prefWidth="176.0" AnchorPane.rightAnchor="61.0" />
+      <ImageView fx:id="precedent" fitHeight="26.0" fitWidth="25.0" layoutX="454.0" layoutY="376.0" onMouseClicked="#showpreced" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/téléchargement%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="suivant" fitHeight="26.0" fitWidth="25.0" layoutX="535.0" layoutY="376.0" onMouseClicked="#showsuiv" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/téléchargement.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="451.0" layoutY="81.0" text="Adress">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_adr" layoutX="447.0" layoutY="103.0" prefHeight="25.0" prefWidth="176.0" />
+      <ImageView fitHeight="243.0" fitWidth="380.0" layoutX="34.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/img.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

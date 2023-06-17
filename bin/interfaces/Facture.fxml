@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.FactureController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="644.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafx/images/facture.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="10.0" text="Facture">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="20.0" layoutY="125.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="82.0" prefHeight="20.0" prefWidth="78.0" text="Locataire :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="126.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="81.0" text="Logement :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField cache="true" cacheHint="ROTATE" depthTest="DISABLE" disable="true" layoutX="110.0" layoutY="79.0" visible="false">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor></TextField>
+      <TextField fx:id="txt_montant" blendMode="MULTIPLY" cache="true" layoutX="110.0" layoutY="296.0" promptText="Montant a payer" />
+      <TextField fx:id="txt_region" blendMode="MULTIPLY" cache="true" layoutX="436.0" layoutY="123.0" promptText="Region" />
+      <TextField fx:id="txt_locataire" blendMode="MULTIPLY" cache="true" layoutX="110.0" layoutY="191.0" promptText="Locataire" />
+      <TextField fx:id="txt_loyer" blendMode="MULTIPLY" cache="true" layoutX="111.0" layoutY="242.0" promptText="Loyer" />
+      <TextField fx:id="txt_adress" blendMode="MULTIPLY" cache="true" layoutX="110.0" layoutY="136.0" promptText="Adress" />
+      <TextField fx:id="txt_type" blendMode="MULTIPLY" cache="true" layoutX="436.0" layoutY="166.0" promptText="Type" />
+      <ComboBox fx:id="cb_logement" layoutX="110.0" layoutY="80.0" onMouseClicked="#remplirlogement" prefWidth="150.0" />
+      <ComboBox fx:id="cb_locataire" layoutX="435.0" layoutY="80.0" onMouseClicked="#remplirlocataire" prefWidth="150.0" />
+      <TextField fx:id="txt_forfaitaire" blendMode="MULTIPLY" cache="true" layoutX="436.0" layoutY="216.0" promptText="Forfaitaire" />
+      <ImageView fx:id="txt_search" fitHeight="41.0" fitWidth="35.0" layoutX="598.0" layoutY="72.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/54481.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="138.0" text="Adress">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="195.0" text="Locataire">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="250.0" text="Loyer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="300.0" text="Montant">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="127.0" text="Region ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="176.0" text="Type">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="220.0" text="Forfaitaire">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

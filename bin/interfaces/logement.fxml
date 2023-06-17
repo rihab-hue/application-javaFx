@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.LogementController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="644.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafx/images/logement.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="10.0" text="Logemment">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="20.0" layoutY="115.0" text="Adress">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="116.0" text="Superficie">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_adr" layoutX="72.0" layoutY="112.0" />
+      <TextField fx:id="txt_superficie" layoutX="310.0" layoutY="112.0" />
+      <TextField fx:id="txt_loyer" layoutX="521.0" layoutY="112.0" />
+      <Label layoutX="478.0" layoutY="117.0" text="Loyer" />
+      <Label layoutX="20.0" layoutY="156.0" text="Région" />
+      <Label layoutX="265.0" layoutY="156.0" text="Type" />
+      <ComboBox fx:id="cb_region" layoutX="72.0" layoutY="154.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_type" layoutX="310.0" layoutY="152.0" prefWidth="150.0" />
+      <TableView fx:id="table_logement" layoutX="58.0" layoutY="191.0" onMouseClicked="#clicktable" prefHeight="179.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="cin_id" prefWidth="92.0" text="Id" />
+          <TableColumn fx:id="cin_adr" prefWidth="98.0" text="Adress" />
+            <TableColumn fx:id="cin_superficie" prefWidth="89.0" text="Superficie" />
+            <TableColumn fx:id="cin_loyer" minWidth="9.0" prefWidth="105.0" text="Loyer" />
+            <TableColumn fx:id="cin_type" prefWidth="79.0" text="Type" />
+            <TableColumn fx:id="cin_region" prefWidth="106.0" text="Région" />
+        </columns>
+      </TableView>
+      <Label layoutX="236.0" layoutY="70.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_search" layoutX="204.0" layoutY="68.0" promptText="Identifiant" />
+      <Button fx:id="btnadd" layoutX="164.0" layoutY="424.0" mnemonicParsing="false" onMouseClicked="#addlogement" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #FFA500;" text="Ajouter" AnchorPane.bottomAnchor="7.0" />
+      <Button fx:id="btndelete" layoutX="407.0" layoutY="424.0" mnemonicParsing="false" onMouseClicked="#supplogement" style="-fx-background-color: #FFA500;" text="Supprimer" AnchorPane.bottomAnchor="7.0" />
+      <Button fx:id="btnmodifier" layoutX="295.0" layoutY="424.0" mnemonicParsing="false" onMouseClicked="#modifylogement" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #FFA500;" text="Modifier" AnchorPane.bottomAnchor="7.0" />
+      <ImageView fitHeight="25.0" fitWidth="45.0" layoutX="363.0" layoutY="68.0" onMouseClicked="#searchlogement" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/54481.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

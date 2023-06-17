@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.HomeController">
+   <children>
+      <AnchorPane layoutY="-15.0" prefHeight="500.0" prefWidth="216.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-15.0">
+         <children>
+            <Pane layoutX="20.0" layoutY="310.0" onMouseClicked="#location" prefHeight="52.0" prefWidth="180.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="310.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="30.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/téléchargement-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="65.0" layoutY="17.0" text="Les locations">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="27.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="20.0" layoutY="384.0" onMouseClicked="#facture" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="384.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="32.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/facture.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="17.0" text="Les factures">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="20.0" layoutY="103.0" onMouseClicked="#accueil" prefHeight="52.0" prefWidth="176.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="103.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="30.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/acceuil.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="17.0" text="Accueil">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Pane>
+            <Pane prefHeight="86.0" prefWidth="216.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator layoutX="-5.0" layoutY="92.0" prefHeight="3.0" prefWidth="223.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="20.0" layoutY="171.0" onMouseClicked="#logement" prefHeight="52.0" prefWidth="180.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="171.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="32.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/logement.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="62.0" layoutY="17.0" text="Les logements">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="20.0" layoutY="240.0" onMouseClicked="#locataire" prefHeight="52.0" prefWidth="180.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="240.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="30.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/locatairr.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="17.0" text="Les locataires">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="27.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="53.0" layoutY="50.0" text=" Notre Agence" textAlignment="CENTER" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="216.0" layoutY="86.0" prefHeight="415.0" prefWidth="684.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="86.0" />
+      <Pane layoutX="216.0" prefHeight="86.0" prefWidth="684.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="476.0" layoutY="43.0" text="Administrateur" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <ImageView fitHeight="62.0" fitWidth="64.0" layoutX="599.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/admin-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="16.0" layoutY="442.0" onMouseClicked="#chat" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #FFA500;">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="32.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafx/images/facture.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="17.0" text="chat">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

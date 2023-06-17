@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.LocationController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="644.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafx/images/téléchargement-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="10.0" text="Location">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="20.0" layoutY="125.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="82.0" prefHeight="20.0" prefWidth="78.0" text="Locataire :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="126.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="81.0" text="Logement :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField cache="true" cacheHint="ROTATE" depthTest="DISABLE" disable="true" layoutX="110.0" layoutY="79.0" visible="false">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor></TextField>
+      <Button fx:id="bntadd" layoutX="447.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#addlocation" prefHeight="33.0" prefWidth="80.0" style="-fx-background-color: #FFA500;" text="Ajouter" />
+      <TextField fx:id="txt_searchlogement" blendMode="MULTIPLY" cache="true" layoutX="126.0" layoutY="80.0" promptText="Identifiant" />
+      <TextField fx:id="txt_searchlocataire" blendMode="MULTIPLY" cache="true" layoutX="419.0" layoutY="80.0" promptText="cin" />
+      <TextField fx:id="txt_region" blendMode="MULTIPLY" cache="true" layoutX="126.0" layoutY="296.0" promptText="Region" />
+      <TextField fx:id="txt_nom" blendMode="MULTIPLY" cache="true" layoutX="419.0" layoutY="131.0" promptText="NomComplet" />
+      <TextField fx:id="txt_type" blendMode="MULTIPLY" cache="true" layoutX="126.0" layoutY="242.0" promptText="Type" />
+      <TextField fx:id="txt_loyer" blendMode="MULTIPLY" cache="true" layoutX="126.0" layoutY="191.0" promptText="Loyer" />
+      <TextField fx:id="txt_adress" blendMode="MULTIPLY" cache="true" layoutX="126.0" layoutY="134.0" promptText="Adress" />
+      <TextField fx:id="txt_telephone" blendMode="MULTIPLY" cache="true" layoutX="419.0" layoutY="218.0" promptText="Telephone" />
+      <DatePicker fx:id="txt_debut" layoutX="420.0" layoutY="260.0" prefHeight="25.0" prefWidth="107.0" promptText="date debut" />
+      <DatePicker fx:id="txt_fin" layoutX="542.0" layoutY="260.0" prefHeight="25.0" prefWidth="107.0" promptText="date fin" />
+      <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="275.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="282.0" layoutY="80.0" onMouseClicked="#searchlogement" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/54481.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="574.0" layoutY="80.0" onMouseClicked="#searchlocataire" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/54481.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_cin" layoutX="420.0" layoutY="173.0" promptText="CIN" />
+      <Label layoutX="331.0" layoutY="262.0" prefHeight="20.0" prefWidth="78.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="220.0" prefHeight="21.0" prefWidth="89.0" text="Telephone:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="175.0" prefHeight="20.0" prefWidth="78.0" text="Cin:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="134.0" prefHeight="20.0" prefWidth="78.0" text="Nom:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="298.0" text="Region :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="250.0" text="Type :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="193.0" text="Loyer :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="136.0" text="Adress:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="300.0" />
+   </children>
+</AnchorPane>

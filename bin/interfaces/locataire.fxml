@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.LocataireController">
+   <children>
+      <Pane prefHeight="41.0" prefWidth="644.0" style="-fx-background-color: #FFA500;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/javafx/images/locatairr.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="10.0" text="Locataires">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="62.0" layoutY="117.0" text="NomComplet">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="74.0" prefHeight="20.0" prefWidth="78.0" text="Telephone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nom" layoutX="168.0" layoutY="115.0" />
+      <TextField fx:id="txt_tele" layoutX="286.0" layoutY="71.0" />
+      <Label layoutX="364.0" layoutY="118.0" text="DateNaissance">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TableView fx:id="table_locataire" layoutX="155.0" layoutY="145.0" onMouseClicked="#tablelocatairclick" prefHeight="236.0" prefWidth="436.0" AnchorPane.bottomAnchor="34.0">
+        <columns>
+          <TableColumn fx:id="cin_nomcomplet" prefWidth="114.0" text="NomComplet" />
+            <TableColumn fx:id="cin_cin" prefWidth="73.0" text="Cin" />
+            <TableColumn fx:id="cin_datenaissance" minWidth="9.0" prefWidth="105.0" text="DateNaissance" />
+            <TableColumn fx:id="cin_telephone" prefWidth="79.0" text="Telephone" />
+            <TableColumn fx:id="cin_id" prefWidth="75.0" text="idl" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="73.0" text="CIN">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_cin" layoutX="65.0" layoutY="71.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="btn_ajouter" layoutX="168.0" layoutY="393.0" mnemonicParsing="false" onMouseClicked="#addlocataire" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #FFA500;" text="Ajouter" AnchorPane.bottomAnchor="3.0" />
+      <Button fx:id="btn_supprimer" layoutX="411.0" layoutY="393.0" mnemonicParsing="false" onMouseClicked="#supplocataire" style="-fx-background-color: #FFA500;" text="Supprimer" AnchorPane.bottomAnchor="3.0" />
+      <Button fx:id="btn_modifier" layoutX="292.0" layoutY="393.0" mnemonicParsing="false" onMouseClicked="#modifylocataire" prefHeight="20.0" prefWidth="72.0" style="-fx-background-color: #FFA500;" text="Modifier" AnchorPane.bottomAnchor="3.0" />
+      <DatePicker fx:id="datepicker" layoutX="461.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="456.0" layoutY="74.0" text="Recherche">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_search" layoutX="533.0" layoutY="72.0" prefHeight="25.0" prefWidth="116.0" promptText="CIN" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="652.0" layoutY="72.0" onMouseClicked="#searchlocataire" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/javafx/images/54481.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

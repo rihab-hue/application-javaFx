@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="vb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.IdentifierController">
+   <children>
+      <AnchorPane layoutX="400.0" prefHeight="500.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="172.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/admin-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="14.0" layoutY="250.0" prefHeight="69.0" prefWidth="372.0">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="28.0" />
+                  <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" translateX="50.0">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/key.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="40.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <PasswordField fx:id="txt_password" alignment="TOP_LEFT" prefHeight="27.0" prefWidth="200.0" promptText="mot de pass" style="-fx-background-color: transparent; -fx-border-color: #FFA500; -fx-border-width: 0px 0px 2px 0px;">
+                     <HBox.margin>
+                        <Insets left="40.0" right="60.0" top="10.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox layoutX="14.0" layoutY="171.0" prefHeight="69.0" prefWidth="372.0">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="28.0" />
+                  <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" translateX="50.0">
+                     <image>
+                        <Image url="@../../../../Desktop/javafx/images/icon%20user.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="txt_username" alignment="TOP_LEFT" layoutX="5.0" prefHeight="27.0" prefWidth="199.0" promptText="nom d'utilisateur" style="-fx-background-color: transparent; -fx-border-color: #FFA500; -fx-border-width: 0px 0px 2px 0px;">
+                     <HBox.margin>
+                        <Insets left="70.0" right="40.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button fx:id="connecter" layoutX="134.0" layoutY="340.0" mnemonicParsing="false" onAction="#openHome" prefHeight="32.0" prefWidth="190.0" styleClass="pane" stylesheets="@../application/application.css" text="Connecter" textAlignment="CENTER" />
+            <Text fill="ORANGE" layoutX="151.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #FFA500;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="145.0" layoutX="78.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="77.0">
+               <image>
+                  <Image url="@../../../../Downloads/logement%20(2).png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="66.0" layoutY="282.0" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Agence Immobilière " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
